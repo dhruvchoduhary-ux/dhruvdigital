@@ -25,7 +25,7 @@ function AnalyticsTracker() {
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/dhruvdigital">
         <AnalyticsTracker />
         <Routes>
           <Route element={<Layout />}>
