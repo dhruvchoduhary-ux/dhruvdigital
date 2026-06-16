@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+.dark body {
+  @apply bg-slate-950 text-slate-50;
+}
