@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/dhruvdigital/',/', // 👈 This line tells GitHub where your site lives
+  base: '/dhruvdigital/', // 👈 Must have a comma at the end of this line
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
