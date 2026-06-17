@@ -10,7 +10,8 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/dhruvdigital/', // 👈 Must have a comma at the end of this line
+  base: '/dhruvdigital/',
+  publicDir: 'public', // 👈 Forces Vite to process your sitemap.xml and google verification html files
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
