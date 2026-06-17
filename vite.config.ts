@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 // https://vite.dev/config/
 export default defineConfig({
   base: '/dhruvdigital/',
-  publicDir: 'public', // 👈 Forces Vite to process your sitemap.xml and google verification html files
+  public: 'public', // 👈 Forces Vite to process your sitemap.xml and google verification html files
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
